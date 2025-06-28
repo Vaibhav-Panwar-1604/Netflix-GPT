@@ -1,12 +1,125 @@
-# Netflix-GPT
+# 🎬 NetflixGPT – AI-Powered Netflix Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NetflixGPT is a smart, fully responsive Netflix UI clone powered by React, TailwindCSS, Firebase, Redux Toolkit, TMDB API, and OpenAI GPT. It allows users to sign in, browse movies, and get intelligent GPT-powered movie suggestions in natural language.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 🔐 Authentication
+- Firebase Auth (Sign Up, Sign In, Sign Out)
+- Form validation with useRef
+- Update display name & profile picture
+- Protected routing with redirects
+- Unsubscribed `onAuthStateChanged` on unmount
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎞️ Movie Browsing (TMDB API)
+- Now Playing and Popular movies
+- Background trailer video autoplay + mute
+- Title & overview overlay on banner
+- Multiple reusable movie carousels
+- Image rendering via TMDB CDN
+
+### 🤖 GPT Movie Search (OpenAI)
+- GPT-powered natural language search
+- Multi-language support
+- Smart movie suggestions using TMDB + GPT
+- Result display using MovieList component
+- Redux-powered GPT slice state
+
+---
+
+## 🧰 Tech Stack
+
+- React + Vite
+- TailwindCSS
+- Redux Toolkit
+- React Router DOM
+- Firebase Auth
+- TMDB API
+- OpenAI GPT API
+- Custom Hooks
+- Environment Variables (.env)
+
+---
+
+## ⚙️ Setting Up the Project
+
+### 1️⃣ Clone the Repo
+
+```bash
+git clone https://github.com/Vaibhav-Panwar-1604/Netflix-GPT.git
+cd NetflixGPT
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Create `.env` File
+
+Create a `.env` file in the root directory:
+
+```bash
+touch .env
+```
+
+Then add:
+
+```env
+VITE_TMDB_API_KEY=your_tmdb_access_token
+VITE_OPENAI_API_KEY=your_openai_api_key
+```
+
+✅ Note: `.env` is ignored in `.gitignore`.
+
+---
+
+## 🔑 Get Your API Keys
+
+### 🎬 TMDB API Key
+
+1. Go to https://developer.themoviedb.org
+2. Log in and go to API section
+3. Create a new app and copy the Access Token (v4 auth)
+4. Paste it in `.env` as:
+
+```env
+VITE_TMDB_API_KEY=your_tmdb_access_token
+```
+
+---
+
+### 🤖 OpenAI API Key
+
+1. Go to https://platform.openai.com/account/api-keys
+2. Create a new secret key
+3. Paste it in `.env` as:
+
+```env
+VITE_OPENAI_API_KEY=your_openai_api_key
+```
+
+---
+
+## ▶️ Run the App
+
+```bash
+npm run dev
+```
+
+Then open: http://localhost:5173
+
+---
+
+
+## 👤 Author
+
+**Vaibhav Panwar**  
+GitHub: [@Vaibhav-Panwar-1604](https://github.com/Vaibhav-Panwar-1604)
+
+---
+
+
