@@ -54,8 +54,8 @@ const Header = () => {
   }
 
   return (
-    <div className="absolute px-8 py-2 w-screen bg-gradient-to-b from-black z-10 flex justify-between">
-      <img className="w-44 " src={LOGO} alt="logo" />
+    <div className="absolute px-8 py-2 w-screen bg-gradient-to-b from-black z-10 flex flex-col items-center md:flex-row justify-between">
+      <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
       {user && (
         <div className="flex p-2 items-center">
           {gptSearch && <select className="p-2 m-2 bg-gray-900 text-white" onChange={handleChangeEvent}>
