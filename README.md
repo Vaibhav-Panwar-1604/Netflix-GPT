@@ -4,12 +4,6 @@ NetflixGPT is a smart, fully responsive Netflix UI clone powered by React, Tailw
 
 ---
 
-## 🚀 Live Demo
-
-> [Add your deployed Firebase link here]
-
----
-
 ## ✨ Features
 
 ### 🔐 Authentication
