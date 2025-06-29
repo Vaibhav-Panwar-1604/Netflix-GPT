@@ -2,6 +2,7 @@
 
 NetflixGPT is a smart, fully responsive Netflix UI clone powered by React, TailwindCSS, Firebase, Redux Toolkit, TMDB API, and OpenAI GPT. It allows users to sign in, browse movies, and get intelligent GPT-powered movie suggestions in natural language.
 
+🌐 **Live Demo**: [https://moviesgptclone.netlify.app](https://moviesgptclone.netlify.app)
 ---
 
 ## ✨ Features
